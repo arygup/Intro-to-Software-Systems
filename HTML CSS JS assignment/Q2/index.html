@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    td, th {
+      padding: 12px 20px;
+      border: 1px solid blue;
+    }
+    tr {
+      padding: auto;
+      border: 1px solid blue;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <table>
+      <thead style="background-color: orange;">
+        <tr>
+          <th>Timing</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>8:30 AM</th>
+          <td class="M"> </td>
+          <td class="T"> </td>
+          <td class="W"> </td>
+          <td class="Th"> </td>
+          <td class="F"> </td>
+          <td class="S"> </td>
+        </tr>
+        <tr>
+          <th>10:00 AM</th>
+          <td class="M"> </td>
+          <td class="T"> </td>
+          <td class="W"> </td>
+          <td class="Th"> </td>
+          <td class="F"> </td>
+          <td class="S"> </td>
+        </tr>
+        <tr>
+          <th>11:30 AM</th>
+          <td class="M"> </td>
+          <td class="T"> </td>
+          <td class="W"> </td>
+          <td class="Th"> </td>
+          <td class="F"> </td>
+          <td class="S"> </td>
+        </tr>
+        <tr style="background-color: orange; padding: 12px 20px; ">
+          <td style="border: #1c7ed6;"></td>
+          <td style="border: #1c7ed6;">L</td>
+          <td style="border: #1c7ed6;">U</td>
+          <td style="border: #1c7ed6;">N</td>
+          <td style="border: #1c7ed6;">C</td>
+          <td style="border: #1c7ed6;">H</td>
+          <td style="border: #1c7ed6;"></td>
+        </tr>
+        <tr>
+          <th>2:00 PM</th>
+          <td class="M"> </td>
+          <td class="T"> </td>
+          <td class="W"> </td>
+          <td class="Th"> </td>
+          <td class="F"> </td>
+          <td class="S"> </td>
+        </tr>
+        <tr>
+          <th>3:30 PM</th>
+          <td class="M"> </td>
+          <td class="T"> </td>
+          <td class="W"> </td>
+          <td class="Th"> </td>
+          <td class="F"> </td>
+          <td class="S"> </td>
+        </tr>
+        <tr>
+          <th>5:00 PM</th>
+          <td class="M"> </td>
+          <td class="T"> </td>
+          <td class="W"> </td>
+          <td class="Th"> </td>
+          <td class="F"> </td>
+          <td class="S"> </td>
+        </tr>
+      </tbody>
+    </table>
+  </center>
+
+  <script>
+    const ui = function () 
+    {
+      let ary = [];
+      const timetableArr = [];
+      for (let i = 0; i < 18; i++) {
+        const subject = prompt(`Enter Subject->: ${i + 1}`);
+        ary.push(subject);  // 18   // 0-5 6-11 12-17
+      }
+      const m = document.getElementsByClassName('M');
+      const w = document.getElementsByClassName('W');
+      const f = document.getElementsByClassName('F');
+      const s = document.getElementsByClassName('S');
+      const t = document.getElementsByClassName('T');
+      const th = document.getElementsByClassName('Th');
+      for (let i = 0; i < 6; i++) {
+        m[i].textContent = ary[i];
+        s[i].textContent = ary[i];
+      }
+      for (let i = 6; i < 12; i++) {
+        t[i-6].textContent = ary[i];
+        th[i-6].textContent = ary[i];
+      }
+      for (let i = 12; i < 18; i++) {
+        f[i-12].textContent = ary[i];
+        w[i-12].textContent = ary[i];
+      }
+    };
+    ui();
+  </script>
+</body>
+
+</html>

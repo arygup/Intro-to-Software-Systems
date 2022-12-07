@@ -1,0 +1,7 @@
+KPIs,Mertics,Instructions only
+Best listed Industry,,Based on total number of Highs
+Best Company,,"Based on Gain%. In case of tie, use exactincrement in INR value. In case of tie in exact INR value, pick top one when arrangend in alphabatical order"
+Gain %,,
+Worst listed Industry,,Based on total number of Lows
+Worst Company,,
+Loss %,,"Based on Lost%. In case of tie, use exact decrement in INR value.  In case of tie in exact INR value, pick bottom one when arrangend in alphabatical order"

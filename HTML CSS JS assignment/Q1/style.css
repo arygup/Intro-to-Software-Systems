@@ -1,0 +1,23 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+form {color: gold}
+blockquote {color:aqua}
+a {color: blueviolet}
+lil {
+    border: 2px solid white;
+    padding: 10px;
+}
+p {
+    border: 2px solid powderblue;
+    padding: 30px;
+  }
+blockquote{
+    padding: 20px;
+    font-size: 50px;
+}
+#myDiv {
+    border: thick solid orangered;
+}

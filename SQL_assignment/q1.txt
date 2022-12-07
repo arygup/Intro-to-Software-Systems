@@ -1,0 +1,3 @@
+SELECT
+CONCAT(Name, ’(‘, SUBSTR(Profession, 1, 1), ’)’) 
+FROM Q1;
